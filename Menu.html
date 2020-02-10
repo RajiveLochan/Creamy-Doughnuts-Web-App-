@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Menu</title>
+<link rel="stylesheet" type="text/css" href="menucss.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" type="text/css" href="loginandsignup.css"/>
+<style>
+
+
+</style>
+</head>
+
+<body>
+
+<body style="background-color:#FFE4C4	;">
+
+<body>
+
+
+<ul>
+<li><a href="Homepage.html">Home</a></li>
+<li class="dropdown">
+    <a href="Menu.html" class="dropbtn">Menu</a> 
+<li><a href="specialoffers.html">Special Offers</a></li> 
+<li><a href="Homepage.html#AboutUs">About Us</a></li> 
+<li><a href="Homepage.html#ContactUs">Contact Us</a></li> 
+<li style="float:right"><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="PICSSSS/login-icon.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+</ul>
+<img src="rajivgandhi.png"  alt="LOGO" style="width:50%;">
+<div class="bigimage-image">
+  <div class="bigimage-text">
+    <h1 style="font-size:75px">The Menu</h1>
+   
+   
+  </div>
+</div>
+
+<br></br>
+<br></br>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="PICSSSS/chocolate-heath.png" alt="Chocolate Health" style="width:50%" height="70%">
+      <h3>Chocolate Health</h3>
+      <p>A chocolate cake donut topped with chocolate glaze and cayenne pepper.</p>
+      <h2>$2.50</h2>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="PICSSSS/chocolate-sprinkles.png" alt="Sprinkles" style="width:50%" height="70%">
+      <h3>Chocolate Sprinkles</h3>
+      <p>A vanilla cake donut with your chocolate glaze and rainbow sprinkles.</p>
+      <h2>$2.50</h2>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="PICSSSS/Caramel-Chocolate-Sea-Salt.png" alt="chocolate" style="width:50%" height="70%">
+      <h3>Caramel Chocolate Sea-Salt</h3>
+      <p>A pumpkin cake donut topped with a pumpkin glaze and cinnamon sugar crumble.</p>
+      <h2>$2.50</h2>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="PICSSSS/Cucumber-Melon.png" alt="Cucumber" style="width:50%" height="70%">
+      <h3>Cucumber-Melon</h3>
+      <p>A Cucumber cake donut topped with an white blossom glaze.</p>
+      <h2>$2.50</h2>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+   <div class="column">
+    <div class="content">
+    <img src="PICSSSS/red-velvet.png" alt="Velvet" style="width:50%" height="70%">
+      <h3>Red Velvet</h3>
+      <p>A bismark donut filled with Red Velvet, lightly glazed and sprinkled with almonds.</p>
+      <h2>$3.50</h2>
+    </div>
+  </div>
+     <div class="column">
+    <div class="content">
+    <img src="PICSSSS/vanilla-chocolate.png" alt="VAnila" style="width:50%" height="70%">
+      <h3>Vanila Chocolate</h3>
+      <p>Our traditional cake donut dipped in vanilla frosting</p>
+      <h2>$3.50</h2>
+    </div>
+  </div>
+       <div class="column">
+    <div class="content">
+    <img src="PICSSSS/vanilla-chocolate-chips.png" alt="VAnila" style="width:50%" height="70%">
+      <h3>Vanila Chocolate Chips</h3>
+      <p>Chocolate cinnamon crumble and vanilla glaze on top of a vanilla cake donut.</p>
+      <h2>$2.50</h2>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="PICSSSS/bacon-maple.png" alt="Maple" style="width:50%" height="70%">
+      <h3>Bacon Maple</h3>
+      <p>Maple glaze and house made coconut bacon on top of a raised donut.</p>
+      <h2>$3.00</h2>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="column">
+    <div class="content">
+    <img src="PICSSSS/Pineapple-Serrano.png" alt="PineApple" style="width:50%" height="70%">
+      <h3>Pineapple Serrano</h3>
+<p>A raised donut stuffed with peanut butter, Pineapple, honey,topped with powdered sugar.</p>
+      <h2>$4.00</h2>
+    </div>
+  </div>
+    <div class="column">
+    <div class="content">
+    <img src="PICSSSS/blueberry-cake.png" alt="Blueberry" style="width:50%" height="70%">
+      <h3>Blueberry Cake</h3>
+      <p>A raised donut topped with a Blueberry, chili, and lime zest glaze.</p>
+      <h2>$2.50</h2>
+    </div>
+  </div>
+    <div class="column">
+    <div class="content">
+    <img src="PICSSSS/tastes-like-a-samoa.png" alt="Samoa" style="width:50%" height="70%">
+      <h3>Taste like Samoa</h3>
+      <p>A bullseye donut filled with bavarian cream and topped with bruleed sugar.</p>
+      <h2>$3.50</h2>
+    </div>
+  </div>
+    <div class="column">
+    <div class="content">
+    <img src="PICSSSS/Chocolate-MMs.png" alt="MM" style="width:50%" height="70%">
+      <h3>Chocolate MMs</h3>
+      <p>Our traditional cake donut dipped in vanilla frosting and topped with crushed M&M.
+ </p>
+ <h2>$3.50</h2>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+      <div class="column">
+    <div class="content">
+    <img src="PICSSSS/Chocolate-Coconut.png" alt="Chocolate Coconut" style="width:50%" height="70%">
+      <h3>Chocolate Coconut</h3>
+      <p>A raised donut topped with a rich mole glaze and cocoa nibs.</p>
+      <h2>$2.50</h2>
+    </div>
+  </div>
+      <div class="column">
+    <div class="content">
+    <img src="PICSSSS/chocolate-peanut.png" alt="Peanut" style="width:50%" height="70%">
+      <h3>Chocolate Peanut</h3>
+      <p>Peanut butter,coconut bacon, and a bit of sriracha sauce inside a raised donut.</p>
+      <h2>$5.00</h2>
+    </div>
+  </div>
+      <div class="column">
+    <div class="content">
+    <img src="PICSSSS/Caramel-Apple-Cake_170324_143748.png" alt="Caramel" style="width:50%" height="70%">
+      <h3>Caramel Apple Cake</h3>
+      <p>A Apple bread donut topped with peanut butter glaze and candied walnuts.</p>
+      <h2>$3.00</h2>
+    </div>
+  </div>
+      <div class="column">
+    <div class="content">
+    <img src="PICSSSS/Fruit-Loops.png" alt="Fruit" style="width:50%" height="70%">
+      <h3>Fruit Loops</h3>
+      <p>Our traditional cake donut dipped in vanilla frosting & topped with Fruity Pebbles cereal</p>
+      <h2>$3.00</h2>
+    </div>
+  </div>
+  </div>
+  <br></br>
+<br></br>
+  <br></br>
+<br></br>
+  <br></br>
+<br></br>
+  <br></br>
+<br></br>
+  <br></br>
+<br></br>
+
+
+
+
+</div>
+<br></br>
+
+
+
+<br></br>
+
+
+
+<footer>
+
+<div>
+ 
+  <a href="https://www.facebook.com/DunkinDonuts" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/dunkindonuts" class="fa fa-twitter"></a>
+  <a href="https://www.instagram.com/dunkin_donuts0/?hl=en" class="fa fa-instagram"></a>
+  <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a><br/>
+  <button onclick="topFunction()" class="top" id="myBtn" title="Go to top">TOP</button> 
+  
+  <div>
+ <p>Powered by  <a href="http://www.icbt.lk/icbt/home" title="ICBT" target="_blank">Creamy Donuts</a></p>
+  </div>
+  </div>
+</footer>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
+

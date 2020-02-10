@@ -1,0 +1,328 @@
+<!doctype html>
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Homepage</title>
+<link rel="stylesheet" type="text/css" href="homepage.css"/>
+<link rel="stylesheet" type="text/css" href="loginandsignup.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+</style>
+</head>
+<body style="background-color:#FFE4C4	;">
+<ul>
+
+<li><a href="Homepage.html">Home</a></li>
+<li class="dropdown">
+    <a href="Menu.html" class="dropbtn">Menu</a> 
+<li><a href="specialoffers.html">Special Offers</a></li> 
+<li><a href="Homepage.html#AboutUs">About Us</a></li> 
+<li><a href="Homepage.html#ContactUs">Contact Us</a></li>    
+<li style="float:right"><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="PICSSSS/login-icon.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+ 
+</ul>
+
+<img src="rajivgandhi.png" alt="LOGO" style="width:50%;">
+
+<div class="section" style="max-width:" style="max-height:">
+  <img class="mySlides" src="PICSSSS/HOMe1.jpg" style="width:100%" height="600" >
+  <img class="mySlides" src="PICSSSS/no.jpg" style="width:100%" height="600">
+  <img class="mySlides" src="PICSSSS/home4.jpg" style="width:100%" height="600" >
+    <img class="mySlides" src="PICSSSS/dunkin.jpg"style="width:100%" height="600" >
+
+</div>
+
+
+<div id="map"></div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+
+
+
+
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+  
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<div class="container">
+  <img src="PICSSSS/donuts_macro_sprinkling_sweet_43778_1920x1080-450x253.jpg" alt="Notebook" style="width:100%; height:100%">
+  <div class="content">
+    <h1 id="AboutUs">About Us</h1>
+    <p>The Creamy Doughnut Shop lovingly hand crafts unique, artisan donuts with a delightful mix of premium ingredients, creative donut design and affordable prices. Donuts are fun. They should also be truly delicious and ultra fresh. How fresh? We make them several times each day. We proudly partner with Peet’s Coffee, so you can pair your gourmet donut with a premium cup. Treat yourself and experience the best donuts in Columbus..</p>
+<br></br>
+<h1>Transparency Adds to Experience</h1>
+<p>When you visit the shops, you can see how the doughnuts are made. The transparency of the process is based on the philosophy that buying a doughnut is an experience, not just a product.
+
+All new products are developed in line with the same core philosophy and process applied to Creamy doughnuts. Stay tuned for exciting and delicious new treats! </p>
+  </div>
+</div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+
+  <div class="container" id="contact" align="center">
+    <h1 id="ContactUs">Contact Us</h1><br>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <p class=""><b>Delivery Service, Address: 4 Broadwick St, Soho, London W1F 0DA, UK </b></p>
+    <p>You can also contact us by phone 077-3813553 or email creamydoughnuts.gmail.com, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="Footer" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="Footer" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="Footer" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="Footer" type="submit">SEND MESSAGE</button></p>
+    </form>
+<br></br>
+<br></br>
+  </div>
+  
+  
+<footer>
+<div>
+  <a href="https://www.facebook.com/DunkinDonuts" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/dunkindonuts" class="fa fa-twitter"></a>
+  <a href="https://www.instagram.com/dunkin_donuts0/?hl=en" class="fa fa-instagram"></a>
+  <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
+  
+  <div>
+  <p>Powered by  <a href="http://www.icbt.lk/icbt/home" title="ICBT" target="_blank">Creamy Donuts</a></p>
+  </div>
+  </div>
+  <button onclick="topFunction()" class="top" id="myBtn" title="Go to top">TOP</button> 
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
